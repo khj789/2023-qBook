@@ -1,6 +1,6 @@
 # 콰토북 {.unnumbered}
 
-**로컬 - 원격 저장소 연동**
+#  **로컬 - 원격 저장소 연동 GIT**
 
 1.  r스튜디오 실행
 
@@ -18,7 +18,7 @@
 
     git push origin main
 
-    **원격 저장소에 저장 후 netlify로 배포**
+    # NETLIFY를 통해 배포
 
     1.  로그인
 

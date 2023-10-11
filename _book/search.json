@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "콰토북333",
     "section": "",
-    "text": "콰토북\n로컬 - 원격 저장소 연동\n\nr스튜디오 실행\nfile - new project - quartobook\ntools - project option - git\nterminal - git remote add origin 저장소주소\ngit config --global user.email “user@example.com”\ngit add .\ngit commit -m “변경사항메모”\ngit push origin main\n원격 저장소에 저장 후 netlify로 배포\n\n로그인\nAdd new site - import an existing project -Deploy with Github\n디렉토리명은 _book 로 설정 후 Deploy site\nSite configuration - Site information의 Change site name 클릭 후 사이트 주소 설정\n사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token\n깉헙 저장소 이동 후 settings\nSecurity - Secrets and variables의 action - New repository secret\n- API ID(= Site ID) 설정:\n\nName 에 NETLIFY_SITE_ID** 라고 입력\nSecret 에 복사해 둔 API ID(Site ID) 값 복사.\n\n- OAuth Access Token 설정\n\nName 에 NETLIFY_AUTH_TOKEN 라고 입력\nSecret 에 복사해 둔 Access token 값 복사."
+    "text": "콰토북\n\n\n로컬 - 원격 저장소 연동 GIT\n\nr스튜디오 실행\nfile - new project - quartobook\ntools - project option - git\nterminal - git remote add origin 저장소주소\ngit config --global user.email “user@example.com”\ngit add .\ngit commit -m “변경사항메모”\ngit push origin main\nNETLIFY를 통해 배포\n\n로그인\nAdd new site - import an existing project -Deploy with Github\n디렉토리명은 _book 로 설정 후 Deploy site\nSite configuration - Site information의 Change site name 클릭 후 사이트 주소 설정\n사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token\n깉헙 저장소 이동 후 settings\nSecurity - Secrets and variables의 action - New repository secret\n- API ID(= Site ID) 설정:\n\nName 에 NETLIFY_SITE_ID** 라고 입력\nSecret 에 복사해 둔 API ID(Site ID) 값 복사.\n\n- OAuth Access Token 설정\n\nName 에 NETLIFY_AUTH_TOKEN 라고 입력\nSecret 에 복사해 둔 Access token 값 복사."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  INTRODUCTION 페이지",
     "section": "",
-    "text": "INTRO.QMD"
+    "text": "intro.qmd"
   },
   {
     "objectID": "summary.html",
