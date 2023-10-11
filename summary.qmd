@@ -1,7 +1,3 @@
-# Summary
+# Summary 페이지
 
-In summary, this book has no content whatsoever.
-
-```{r}
-1 + 1
-```
+summart.qmd

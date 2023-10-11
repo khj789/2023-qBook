@@ -1,2 +1,52 @@
 # 콰토북 {.unnumbered}
-1. 
+
+로컬 - 원격 저장소 연동
+
+1.  r스튜디오 실행
+
+2.  file - new project - quartobook
+
+3.  tools - project option - git
+
+4.  terminal - git remote add origin 저장소주소
+
+5.  git config \--global user.email "user\@example.com"
+
+```{=html}
+<!-- -->
+```
+    git config \--global user.name "user name"
+
+6.  git add .
+
+    git commit -m "변경사항메모"
+
+    git push origin main
+
+    원격 저장소에 저장 후 netlify로 배포
+
+    1.  로그인
+
+    2.  Add new site - import an existing project -Deploy with Github
+
+    3.  디렉토리명은 \_book 로 설정 후 Deploy site
+
+    4.  Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정
+
+    5.  사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token
+
+    6.  깉헙 저장소 이동 후 settings
+
+    7.  Security - Secrets and variables의 action - New repository secret
+
+    8.  \- API ID(= Site ID) 설정:
+
+        -   Name 에 NETLIFY_SITE_ID\*\* 라고 입력
+
+        -   Secret 에 복사해 둔 API ID(Site ID) 값 복사.
+
+        \- OAuth Access Token 설정
+
+        -   Name 에 NETLIFY_AUTH_TOKEN 라고 입력
+
+        -   Secret 에 복사해 둔 Access token 값 복사.

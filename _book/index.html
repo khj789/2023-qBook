@@ -101,12 +101,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary 페이지</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -161,7 +161,41 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="콰토북" class="level1 unnumbered">
 <h1 class="unnumbered">콰토북</h1>
-<p>콰토북</p>
+<p>로컬 - 원격 저장소 연동</p>
+<ol type="1">
+<li><p>r스튜디오 실행</p></li>
+<li><p>file - new project - quartobook</p></li>
+<li><p>tools - project option - git</p></li>
+<li><p>terminal - git remote add origin 저장소주소</p></li>
+<li><p>git config --global user.email “user@example.com”</p></li>
+</ol>
+<!-- -->
+<pre><code>git config \--global user.name "user name"</code></pre>
+<ol start="6" type="1">
+<li><p>git add .</p>
+<p>git commit -m “변경사항메모”</p>
+<p>git push origin main</p>
+<p>원격 저장소에 저장 후 netlify로 배포</p>
+<ol type="1">
+<li><p>로그인</p></li>
+<li><p>Add new site - import an existing project -Deploy with Github</p></li>
+<li><p>디렉토리명은 _book 로 설정 후 Deploy site</p></li>
+<li><p>Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정</p></li>
+<li><p>사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token</p></li>
+<li><p>깉헙 저장소 이동 후 settings</p></li>
+<li><p>Security - Secrets and variables의 action - New repository secret</p></li>
+<li><p>- API ID(= Site ID) 설정:</p>
+<ul>
+<li><p>Name 에 NETLIFY_SITE_ID** 라고 입력</p></li>
+<li><p>Secret 에 복사해 둔 API ID(Site ID) 값 복사.</p></li>
+</ul>
+<p>- OAuth Access Token 설정</p>
+<ul>
+<li><p>Name 에 NETLIFY_AUTH_TOKEN 라고 입력</p></li>
+<li><p>Secret 에 복사해 둔 Access token 값 복사.</p></li>
+</ul></li>
+</ol></li>
+</ol>
 
 
 </section>
@@ -305,7 +339,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
