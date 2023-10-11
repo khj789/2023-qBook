@@ -1,6 +1,4 @@
-# Summary 페이지
-
-summar.qmd
+# **Summary 페이지**
 
 ```{r}
 #| label: fig-airquality
