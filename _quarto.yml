@@ -7,10 +7,10 @@ book:
   date: "2023. 9. 27."
   chapters:
     - index.qmd
-    - new.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
+    - new.qmd
 
 bibliography: references.bib
 
