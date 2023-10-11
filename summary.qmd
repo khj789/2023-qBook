@@ -6,6 +6,7 @@ summar.qmd
 #| label: fig-airquality
 #| fig-cap: "Temperature and ozone level."
 #| warning: false
+#| echo: false
 
 library(ggplot2)
 

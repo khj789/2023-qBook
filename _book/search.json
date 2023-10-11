@@ -18,7 +18,7 @@
     "href": "summary.html",
     "title": "2  Summary 페이지",
     "section": "",
-    "text": "summar.qmd\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n\n\n\n\nFigure 2.1: Temperature and ozone level."
+    "text": "summar.qmd\n\n\n\n\n\nFigure 2.1: Temperature and ozone level."
   },
   {
     "objectID": "references.html",
