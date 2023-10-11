@@ -15,8 +15,6 @@
 ```{=html}
 <!-- -->
 ```
-    git config \--global user.name "user name"
-
 6.  git add .
 
     git commit -m "변경사항메모"
