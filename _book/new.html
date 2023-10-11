@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jane Doe">
-<meta name="dcterms.date" content="2023-09-27">
 
-<title>콰토북333</title>
+<title>콰토북333 – new</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./intro.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -96,17 +95,22 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">콰토북</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">콰토북</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
+  <a href="./new.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">new.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary 페이지</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary 페이지</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -118,86 +122,15 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#콰토북" id="toc-콰토북" class="nav-link active" data-scroll-target="#콰토북">콰토북</a></li>
-  <li><a href="#로컬---원격-저장소-연동-git" id="toc-로컬---원격-저장소-연동-git" class="nav-link" data-scroll-target="#로컬---원격-저장소-연동-git"><strong>로컬 - 원격 저장소 연동 GIT</strong></a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">콰토북333</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jane Doe </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 27, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="콰토북" class="level1 unnumbered">
-<h1 class="unnumbered">콰토북</h1>
-</section>
-<section id="로컬---원격-저장소-연동-git" class="level1">
-<h1><strong>로컬 - 원격 저장소 연동 GIT</strong></h1>
-<ol type="1">
-<li><p>r스튜디오 실행</p></li>
-<li><p>file - new project - quartobook</p></li>
-<li><p>tools - project option - git</p></li>
-<li><p>terminal - git remote add origin 저장소주소</p></li>
-<li><p>git config --global user.email “user@example.com”</p></li>
-<li><p>git add .</p>
-<p>git commit -m “변경사항메모”</p>
-<p>git push origin main</p>
-<h1 id="netlify를-통해-배포"><strong>NETLIFY를 통해 배포</strong></h1>
-<ol type="1">
-<li><p>로그인</p></li>
-<li><p>Add new site - import an existing project -Deploy with Github</p></li>
-<li><p>디렉토리명은 _book 로 설정 후 Deploy site</p></li>
-<li><p>Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정</p></li>
-<li><p>사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token</p></li>
-<li><p>깉헙 저장소 이동 후 settings</p></li>
-<li><p>Security - Secrets and variables의 action - New repository secret</p></li>
-<li><p>- API ID(= Site ID) 설정:</p>
-<ul>
-<li><p>Name 에 NETLIFY_SITE_ID** 라고 입력</p></li>
-<li><p>Secret 에 복사해 둔 API ID(Site ID) 값 복사.</p></li>
-</ul>
-<p>- OAuth Access Token 설정</p>
-<ul>
-<li><p>Name 에 NETLIFY_AUTH_TOKEN 라고 입력</p></li>
-<li><p>Secret 에 복사해 둔 Access token 값 복사.</p></li>
-</ul></li>
-</ol></li>
-</ol>
+<p>dadasd</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -335,10 +268,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">콰토북</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

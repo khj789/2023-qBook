@@ -18,7 +18,7 @@
 
     git push origin main
 
-    # NETLIFY를 통해 배포
+    # **NETLIFY를 통해 배포**
 
     1.  로그인
 
