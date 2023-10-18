@@ -1,14 +1,3 @@
-# **Summary 페이지**
+# ss
 
-```{r}
-#| label: fig-airquality
-#| fig-cap: "Temperature and ozone level."
-#| warning: false
-#| echo: false
-
-library(ggplot2)
-
-ggplot(airquality, aes(Temp, Ozone)) + 
-  geom_point() + 
-  geom_smooth(method = "loess")
-```
+ss
