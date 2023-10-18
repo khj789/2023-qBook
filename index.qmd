@@ -18,7 +18,7 @@
 
     git push origin main
 
-    # **NETLIFY를 통해 배포**
+# **NETLIFY를 통해 배포**
 
     1.  로그인
 
@@ -34,13 +34,13 @@
 
     7.  Security - Secrets and variables의 action - New repository secret
 
-    8.  \- API ID(= Site ID) 설정:
+    8.  - API ID(= Site ID) 설정:
 
-        -   Name 에 NETLIFY_SITE_ID\*\* 라고 입력
+        -   Name 에 NETLIFY_SITE_ID 라고 입력
 
         -   Secret 에 복사해 둔 API ID(Site ID) 값 복사.
 
-        \- OAuth Access Token 설정
+        - OAuth Access Token 설정
 
         -   Name 에 NETLIFY_AUTH_TOKEN 라고 입력
 

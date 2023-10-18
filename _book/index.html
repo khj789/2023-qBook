@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./summary.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -101,12 +101,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">ss</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -130,6 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#콰토북" id="toc-콰토북" class="nav-link active" data-scroll-target="#콰토북"><strong>콰토북</strong></a></li>
   <li><a href="#로컬---원격-저장소-연동-git" id="toc-로컬---원격-저장소-연동-git" class="nav-link" data-scroll-target="#로컬---원격-저장소-연동-git"><strong>로컬 - 원격 저장소 연동 GIT</strong></a></li>
+  <li><a href="#netlify를-통해-배포" id="toc-netlify를-통해-배포" class="nav-link" data-scroll-target="#netlify를-통해-배포"><strong>NETLIFY를 통해 배포</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -178,28 +179,36 @@ ul.task-list li input[type="checkbox"] {
 <li><p>git config --global user.email “user@example.com”</p></li>
 <li><p>git add .</p>
 <p>git commit -m “변경사항메모”</p>
-<p>git push origin main</p>
-<h1 id="netlify를-통해-배포"><strong>NETLIFY를 통해 배포</strong></h1>
-<ol type="1">
-<li><p>로그인</p></li>
-<li><p>Add new site - import an existing project -Deploy with Github</p></li>
-<li><p>디렉토리명은 _book 로 설정 후 Deploy site</p></li>
-<li><p>Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정</p></li>
-<li><p>사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token</p></li>
-<li><p>깉헙 저장소 이동 후 settings</p></li>
-<li><p>Security - Secrets and variables의 action - New repository secret</p></li>
-<li><p>- API ID(= Site ID) 설정:</p>
-<ul>
-<li><p>Name 에 NETLIFY_SITE_ID** 라고 입력</p></li>
-<li><p>Secret 에 복사해 둔 API ID(Site ID) 값 복사.</p></li>
-</ul>
-<p>- OAuth Access Token 설정</p>
-<ul>
-<li><p>Name 에 NETLIFY_AUTH_TOKEN 라고 입력</p></li>
-<li><p>Secret 에 복사해 둔 Access token 값 복사.</p></li>
-</ul></li>
-</ol></li>
+<p>git push origin main</p></li>
 </ol>
+</section>
+<section id="netlify를-통해-배포" class="level1">
+<h1><strong>NETLIFY를 통해 배포</strong></h1>
+<pre><code>1.  로그인
+
+2.  Add new site - import an existing project -Deploy with Github
+
+3.  디렉토리명은 \_book 로 설정 후 Deploy site
+
+4.  Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정
+
+5.  사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token
+
+6.  깉헙 저장소 이동 후 settings
+
+7.  Security - Secrets and variables의 action - New repository secret
+
+8.  - API ID(= Site ID) 설정:
+
+    -   Name 에 NETLIFY_SITE_ID 라고 입력
+
+    -   Secret 에 복사해 둔 API ID(Site ID) 값 복사.
+
+    - OAuth Access Token 설정
+
+    -   Name 에 NETLIFY_AUTH_TOKEN 라고 입력
+
+    -   Secret 에 복사해 둔 Access token 값 복사.</code></pre>
 
 
 </section>
@@ -342,8 +351,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

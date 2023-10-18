@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "콰토북333",
     "section": "",
-    "text": "콰토북\n\n\n로컬 - 원격 저장소 연동 GIT\n\nr스튜디오 실행\nfile - new project - quartobook\ntools - project option - git\nterminal - git remote add origin 저장소주소\ngit config --global user.email “user@example.com”\ngit add .\ngit commit -m “변경사항메모”\ngit push origin main\nNETLIFY를 통해 배포\n\n로그인\nAdd new site - import an existing project -Deploy with Github\n디렉토리명은 _book 로 설정 후 Deploy site\nSite configuration - Site information의 Change site name 클릭 후 사이트 주소 설정\n사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token\n깉헙 저장소 이동 후 settings\nSecurity - Secrets and variables의 action - New repository secret\n- API ID(= Site ID) 설정:\n\nName 에 NETLIFY_SITE_ID** 라고 입력\nSecret 에 복사해 둔 API ID(Site ID) 값 복사.\n\n- OAuth Access Token 설정\n\nName 에 NETLIFY_AUTH_TOKEN 라고 입력\nSecret 에 복사해 둔 Access token 값 복사."
+    "text": "콰토북\n\n\n로컬 - 원격 저장소 연동 GIT\n\nr스튜디오 실행\nfile - new project - quartobook\ntools - project option - git\nterminal - git remote add origin 저장소주소\ngit config --global user.email “user@example.com”\ngit add .\ngit commit -m “변경사항메모”\ngit push origin main\n\n\n\nNETLIFY를 통해 배포\n1.  로그인\n\n2.  Add new site - import an existing project -Deploy with Github\n\n3.  디렉토리명은 \\_book 로 설정 후 Deploy site\n\n4.  Site configuration - Site information의 Change site name 클릭 후 사이트 주소 설정\n\n5.  사용자 아이콘 클릭 - User settings - Applications - New access token -Generate token\n\n6.  깉헙 저장소 이동 후 settings\n\n7.  Security - Secrets and variables의 action - New repository secret\n\n8.  - API ID(= Site ID) 설정:\n\n    -   Name 에 NETLIFY_SITE_ID 라고 입력\n\n    -   Secret 에 복사해 둔 API ID(Site ID) 값 복사.\n\n    - OAuth Access Token 설정\n\n    -   Name 에 NETLIFY_AUTH_TOKEN 라고 입력\n\n    -   Secret 에 복사해 둔 Access token 값 복사."
   },
   {
     "objectID": "intro.html",
@@ -33,5 +33,82 @@
     "title": "3  NEW.QMD",
     "section": "",
     "text": "new.qmd"
+  },
+  {
+    "objectID": "summary.html#분열된-마음",
+    "href": "summary.html#분열된-마음",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.1 10/18, 분열된 마음",
+    "text": "1.1 10/18, 분열된 마음\nhttps://learn.constructivedialogue.org/courses/b7685571-2863-4511-8e38-362884c190ed/flows/fa281183-68f1-4396-8c1e-f8154639fb87/activities/415b27a8-931d-44d6-a1b5-568a6b5376da\n문제상황: 자신이 확신하고 있는 문제에 대해 다른 사람과 의견 충돌이 있을때"
+  },
+  {
+    "objectID": "summary.html#고대의-뇌",
+    "href": "summary.html#고대의-뇌",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.2 고대의 뇌",
+    "text": "1.2 고대의 뇌\n우리의 뇌는 현대 첨대 사회에 맞게 업데이트 되지 않았다."
+  },
+  {
+    "objectID": "summary.html#정신의-지름길-mental-shortcuts",
+    "href": "summary.html#정신의-지름길-mental-shortcuts",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.3 정신의 지름길, mental Shortcuts",
+    "text": "1.3 정신의 지름길, mental Shortcuts\n우리의 뇌는 생존을 돕기 위해 매우 빠르게 처리하는 쇼트컷을 개발했다"
+  },
+  {
+    "objectID": "summary.html#our-divided-minds",
+    "href": "summary.html#our-divided-minds",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.4 Our Divided Minds",
+    "text": "1.4 Our Divided Minds\n우리의 뇌는 automatic과 controlled 두 작동 방법으로 나누어져 있다. automatic은 감정과 직관에 의해 작동되고 controlled는 의식과 분석에 의해 작동된다"
+  },
+  {
+    "objectID": "summary.html#the-rider-and-elephant",
+    "href": "summary.html#the-rider-and-elephant",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.5 The Rider and Elephant",
+    "text": "1.5 The Rider and Elephant\nrider는 controlled, elephant는 automatic에 비유된다"
+  },
+  {
+    "objectID": "summary.html#intuitions-first-reasoning-second",
+    "href": "summary.html#intuitions-first-reasoning-second",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.6 Intuitions First, Reasoning Second",
+    "text": "1.6 Intuitions First, Reasoning Second\n직관이 결정하고 후에 합리화한 과정을 우리는 rider가 결정을 했다고 한다. 우리의 의식은 직관이 먼저고 사후적으로 합리화한다."
+  },
+  {
+    "objectID": "summary.html#autopilot",
+    "href": "summary.html#autopilot",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.7 Autopilot",
+    "text": "1.7 Autopilot\n우리의 직관은 막연하게 부정적인 것이 아니다 직관은 필요하지만 가끔 우리를 헷갈리게 한다."
+  },
+  {
+    "objectID": "summary.html#cognitive-biases-인지-편향",
+    "href": "summary.html#cognitive-biases-인지-편향",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.8 cognitive biases 인지 편향",
+    "text": "1.8 cognitive biases 인지 편향"
+  },
+  {
+    "objectID": "summary.html#confirmation-bias-확증-편향",
+    "href": "summary.html#confirmation-bias-확증-편향",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.9 Confirmation Bias 확증 편향",
+    "text": "1.9 Confirmation Bias 확증 편향\n신념과 일치하는 부분의 정보만 수용하고 반대의 경우는 거부한다."
+  },
+  {
+    "objectID": "summary.html#확증편향-판단하기",
+    "href": "summary.html#확증편향-판단하기",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.10 확증편향 판단하기",
+    "text": "1.10 확증편향 판단하기\nStep 1. 코끼리가 폭주하고 있는지 판단 특정 표현을 조심해라 ex) 모두가 그렇게 생각해, 무조건 옳아\nStep 2. 다른 관점 생각하기"
+  },
+  {
+    "objectID": "summary.html#lesson-1-recap",
+    "href": "summary.html#lesson-1-recap",
+    "title": "1  Lesson 1 : Diviened Mind",
+    "section": "1.11 Lesson 1 Recap",
+    "text": "1.11 Lesson 1 Recap\n\n우리의 뇌에는 두 가지 사고 체계가 있습니다: 자동적인 사고와 통제된 사고.\n우리의 추론은 종종 그 반대가 아니라 우리의 직관을 따릅니다.\n우리는 우리의 추론에서 일관된 오류를 범하기 쉽고, 종종 그것을 알지 못합니다.\n이러한 실수는 우리가 사실을 해석하는 방식을 형성할 수 있고 겉보기에는 다루기 힘든 의견 차이를 초래할 수 있습니다."
   }
 ]
