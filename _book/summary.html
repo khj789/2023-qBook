@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -57,7 +57,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -68,11 +69,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,66 +86,87 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">콰토북333</a> 
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link"><strong>콰토북</strong></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>콰토북</strong></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INTRODUCTION 페이지</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link"><strong>References</strong></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>References</strong></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./new.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><strong>NEW.QMD</strong></span></a>
+  <a href="./new.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><strong>NEW.QMD</strong></span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#분열된-마음" id="toc-분열된-마음" class="nav-link active" data-scroll-target="#분열된-마음"><span class="toc-section-number">1.1</span>  10/18, 분열된 마음</a></li>
-  <li><a href="#고대의-뇌" id="toc-고대의-뇌" class="nav-link" data-scroll-target="#고대의-뇌"><span class="toc-section-number">1.2</span>  고대의 뇌</a></li>
-  <li><a href="#정신의-지름길-mental-shortcuts" id="toc-정신의-지름길-mental-shortcuts" class="nav-link" data-scroll-target="#정신의-지름길-mental-shortcuts"><span class="toc-section-number">1.3</span>  정신의 지름길, mental Shortcuts</a></li>
-  <li><a href="#our-divided-minds" id="toc-our-divided-minds" class="nav-link" data-scroll-target="#our-divided-minds"><span class="toc-section-number">1.4</span>  Our Divided Minds</a></li>
-  <li><a href="#the-rider-and-elephant" id="toc-the-rider-and-elephant" class="nav-link" data-scroll-target="#the-rider-and-elephant"><span class="toc-section-number">1.5</span>  The Rider and Elephant</a></li>
-  <li><a href="#intuitions-first-reasoning-second" id="toc-intuitions-first-reasoning-second" class="nav-link" data-scroll-target="#intuitions-first-reasoning-second"><span class="toc-section-number">1.6</span>  Intuitions First, Reasoning Second</a></li>
-  <li><a href="#autopilot" id="toc-autopilot" class="nav-link" data-scroll-target="#autopilot"><span class="toc-section-number">1.7</span>  Autopilot</a></li>
-  <li><a href="#cognitive-biases-인지-편향" id="toc-cognitive-biases-인지-편향" class="nav-link" data-scroll-target="#cognitive-biases-인지-편향"><span class="toc-section-number">1.8</span>  cognitive biases 인지 편향</a></li>
-  <li><a href="#confirmation-bias-확증-편향" id="toc-confirmation-bias-확증-편향" class="nav-link" data-scroll-target="#confirmation-bias-확증-편향"><span class="toc-section-number">1.9</span>  Confirmation Bias 확증 편향</a></li>
-  <li><a href="#확증편향-판단하기" id="toc-확증편향-판단하기" class="nav-link" data-scroll-target="#확증편향-판단하기"><span class="toc-section-number">1.10</span>  확증편향 판단하기</a></li>
-  <li><a href="#lesson-1-recap" id="toc-lesson-1-recap" class="nav-link" data-scroll-target="#lesson-1-recap"><span class="toc-section-number">1.11</span>  Lesson 1 Recap</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="toc-section-number">2</span>  11/8</a></li>
-  <li><a href="#lesson-5-navigating-conflict" id="toc-lesson-5-navigating-conflict" class="nav-link" data-scroll-target="#lesson-5-navigating-conflict"><span class="toc-section-number">3</span>  11/29 lesson 5: navigating conflict</a></li>
+  <li><a href="#고대의-뇌" id="toc-고대의-뇌" class="nav-link active" data-scroll-target="#고대의-뇌"><span class="header-section-number">1.1</span> 고대의 뇌</a></li>
+  <li><a href="#our-divided-minds" id="toc-our-divided-minds" class="nav-link" data-scroll-target="#our-divided-minds"><span class="header-section-number">1.2</span> Our Divided Minds</a></li>
+  <li><a href="#코끼리와-라이더" id="toc-코끼리와-라이더" class="nav-link" data-scroll-target="#코끼리와-라이더"><span class="header-section-number">1.3</span> 코끼리와 라이더</a></li>
+  <li><a href="#직관이-먼저인가-추론이-먼저인가." id="toc-직관이-먼저인가-추론이-먼저인가." class="nav-link" data-scroll-target="#직관이-먼저인가-추론이-먼저인가."><span class="header-section-number">1.4</span> 직관이 먼저인가 추론이 먼저인가.</a></li>
+  <li><a href="#확증편향-판단하기" id="toc-확증편향-판단하기" class="nav-link" data-scroll-target="#확증편향-판단하기"><span class="header-section-number">1.5</span> 확증편향 판단하기</a></li>
+  <li><a href="#lesson-1-recap" id="toc-lesson-1-recap" class="nav-link" data-scroll-target="#lesson-1-recap"><span class="header-section-number">1.6</span> Lesson 1 Recap</a></li>
+  <li><a href="#lesson-2-us-and-them" id="toc-lesson-2-us-and-them" class="nav-link" data-scroll-target="#lesson-2-us-and-them"><span class="header-section-number">2</span> Lesson 2: Us and Them</a>
+  <ul class="collapse">
+  <li><a href="#인식의-차이" id="toc-인식의-차이" class="nav-link" data-scroll-target="#인식의-차이"><span class="header-section-number">2.1</span> 인식의 차이</a></li>
+  <li><a href="#exhausted-majority." id="toc-exhausted-majority." class="nav-link" data-scroll-target="#exhausted-majority."><span class="header-section-number">2.2</span> Exhausted Majority.</a></li>
+  <li><a href="#가지-도덕적-기준" id="toc-가지-도덕적-기준" class="nav-link" data-scroll-target="#가지-도덕적-기준"><span class="header-section-number">2.3</span> 6가지 도덕적 기준</a></li>
+  </ul></li>
+  <li><a href="#lesson-3-get-curious" id="toc-lesson-3-get-curious" class="nav-link" data-scroll-target="#lesson-3-get-curious"><span class="header-section-number">3</span> Lesson 3: Get Curious</a>
+  <ul class="collapse">
+  <li><a href="#the-illusion-of-explanatory-depth" id="toc-the-illusion-of-explanatory-depth" class="nav-link" data-scroll-target="#the-illusion-of-explanatory-depth"><span class="header-section-number">3.1</span> <strong>The Illusion of Explanatory Depth</strong></a></li>
+  <li><a href="#intellectual-humility" id="toc-intellectual-humility" class="nav-link" data-scroll-target="#intellectual-humility"><span class="header-section-number">3.2</span> Intellectual Humility</a></li>
+  <li><a href="#탐험가정신" id="toc-탐험가정신" class="nav-link" data-scroll-target="#탐험가정신"><span class="header-section-number">3.3</span> 탐험가정신</a></li>
+  <li><a href="#건설적인-질문" id="toc-건설적인-질문" class="nav-link" data-scroll-target="#건설적인-질문"><span class="header-section-number">3.4</span> 건설적인 질문</a></li>
+  </ul></li>
+  <li><a href="#lesson-4-storytelling" id="toc-lesson-4-storytelling" class="nav-link" data-scroll-target="#lesson-4-storytelling"><span class="header-section-number">4</span> Lesson 4: storytelling</a>
+  <ul class="collapse">
+  <li><a href="#간접경험-스토리" id="toc-간접경험-스토리" class="nav-link" data-scroll-target="#간접경험-스토리"><span class="header-section-number">4.1</span> 간접경험 스토리</a></li>
+  <li><a href="#스토리에-반응" id="toc-스토리에-반응" class="nav-link" data-scroll-target="#스토리에-반응"><span class="header-section-number">4.2</span> 스토리에 반응</a></li>
+  </ul></li>
+  <li><a href="#lesson-5-navigating-conflict" id="toc-lesson-5-navigating-conflict" class="nav-link" data-scroll-target="#lesson-5-navigating-conflict"><span class="header-section-number">5</span> Lesson 5: Navigating conflict</a>
+  <ul class="collapse">
+  <li><a href="#elephant" id="toc-elephant" class="nav-link" data-scroll-target="#elephant"><span class="header-section-number">5.1</span> 100%elephant</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -148,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lesson 1 : Diviened Mind</span></h1>
 </div>
 
 
@@ -163,50 +190,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="분열된-마음" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="분열된-마음"><span class="header-section-number">1.1</span> 10/18, 분열된 마음</h2>
-<p>https://learn.constructivedialogue.org/courses/b7685571-2863-4511-8e38-362884c190ed/flows/fa281183-68f1-4396-8c1e-f8154639fb87/activities/415b27a8-931d-44d6-a1b5-568a6b5376da</p>
-<p>문제상황: 자신이 확신하고 있는 문제에 대해 다른 사람과 의견 충돌이 있을때</p>
+<section id="고대의-뇌" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="고대의-뇌"><span class="header-section-number">1.1</span> 고대의 뇌</h2>
+<p>과거 인간의 생존은 본능의 속도가 결정했다. 즉 우리의 뇌는 정보를 매우 빠르게 처리하는 방법인 ’short cut’을 개발하였고 우리는 현대에 와서도 여전히 이 ’short cut’을 사용한다. 하지만 이것은 우리의 추론과 의사결정의 과정에서는 실수를 유발하는 부정적이 요소가 될 수 있다.</p>
 </section>
-<section id="고대의-뇌" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="고대의-뇌"><span class="header-section-number">1.2</span> 고대의 뇌</h2>
-<p>우리의 뇌는 현대 첨대 사회에 맞게 업데이트 되지 않았다.</p>
-</section>
-<section id="정신의-지름길-mental-shortcuts" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="정신의-지름길-mental-shortcuts"><span class="header-section-number">1.3</span> 정신의 지름길, mental Shortcuts</h2>
-<p>우리의 뇌는 생존을 돕기 위해 매우 빠르게 처리하는 쇼트컷을 개발했다</p>
-</section>
-<section id="our-divided-minds" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="our-divided-minds"><span class="header-section-number">1.4</span> Our Divided Minds</h2>
-<p>우리의 뇌는 automatic과 controlled 두 작동 방법으로 나누어져 있다. automatic은 감정과 직관에 의해 작동되고 controlled는 의식과 분석에 의해 작동된다</p>
+<section id="our-divided-minds" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="our-divided-minds"><span class="header-section-number">1.2</span> Our Divided Minds</h2>
+<p>우리의 뇌는 automatic과 controlled 두 작동 방법으로 나누어져 있다.</p>
+<p>automatic은 감정과 직관에 의해 작동되고</p>
+<p>controlled는 의식과 분석에 의해 작동된다</p>
 <p><img src="images/캡처.JPG" class="img-fluid"></p>
 </section>
-<section id="the-rider-and-elephant" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="the-rider-and-elephant"><span class="header-section-number">1.5</span> The Rider and Elephant</h2>
-<p>rider는 controlled, elephant는 automatic에 비유된다</p>
+<section id="코끼리와-라이더" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="코끼리와-라이더"><span class="header-section-number">1.3</span> 코끼리와 라이더</h2>
+<p>라이더는 controlled thinking, 통제된 사고 코끼리는 automatic thinking, 직관적 사고에 비유된다</p>
 </section>
-<section id="intuitions-first-reasoning-second" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="intuitions-first-reasoning-second"><span class="header-section-number">1.6</span> Intuitions First, Reasoning Second</h2>
-<p>직관이 결정하고 후에 합리화한 과정을 우리는 rider가 결정을 했다고 한다. 우리의 의식은 직관이 먼저고 사후적으로 합리화한다.</p>
-</section>
-<section id="autopilot" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="autopilot"><span class="header-section-number">1.7</span> Autopilot</h2>
+<section id="직관이-먼저인가-추론이-먼저인가." class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="직관이-먼저인가-추론이-먼저인가."><span class="header-section-number">1.4</span> 직관이 먼저인가 추론이 먼저인가.</h2>
+<p>우리는 사고의 과정에서 추론과 직관의 순서를 헷갈려한다.</p>
+<p>우리는 대부분의 상황에서 신중하게 숙고한 끝에 어떠한 결정에 도달한 것 같은 착각을 한다</p>
+<p>즉 코끼리가 결정한 것을 우리는 라이더가 결정을 했다고 한다.</p>
+<p>우리의 의식은 직관이 먼저고 사후적으로 합리화한다.</p>
 <p>우리의 직관은 막연하게 부정적인 것이 아니다 직관은 필요하지만 가끔 우리를 헷갈리게 한다.</p>
+<p>예시1 - cognitive biases 인지 편향: 경험과 비논리적 추론에 의존한 잘못된 판단</p>
+<p>예시2 - Confirmation Bias 확증 편향: 신념과 일치하는 부분의 정보만 수용하고 반대의 경우는 거부한다..</p>
 </section>
-<section id="cognitive-biases-인지-편향" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="cognitive-biases-인지-편향"><span class="header-section-number">1.8</span> cognitive biases 인지 편향</h2>
-</section>
-<section id="confirmation-bias-확증-편향" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="confirmation-bias-확증-편향"><span class="header-section-number">1.9</span> Confirmation Bias 확증 편향</h2>
-<p>신념과 일치하는 부분의 정보만 수용하고 반대의 경우는 거부한다.</p>
-</section>
-<section id="확증편향-판단하기" class="level2" data-number="1.10">
-<h2 data-number="1.10" class="anchored" data-anchor-id="확증편향-판단하기"><span class="header-section-number">1.10</span> 확증편향 판단하기</h2>
+<section id="확증편향-판단하기" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="확증편향-판단하기"><span class="header-section-number">1.5</span> 확증편향 판단하기</h2>
 <p>Step 1. 코끼리가 폭주하고 있는지 판단 특정 표현을 조심해라 ex) 모두가 그렇게 생각해, 무조건 옳아</p>
-<p>Step 2. 다른 관점 생각하기</p>
+<p>Step 2. 다른 관점 생각하기 ex) 내 결론에 예외가 있을까?, 이것을 다른 방식으로 생각할 수 있을까?</p>
 </section>
-<section id="lesson-1-recap" class="level2" data-number="1.11">
-<h2 data-number="1.11" class="anchored" data-anchor-id="lesson-1-recap"><span class="header-section-number">1.11</span> Lesson 1 Recap</h2>
+<section id="lesson-1-recap" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="lesson-1-recap"><span class="header-section-number">1.6</span> Lesson 1 Recap</h2>
 <ol type="1">
 <li><p>우리의 뇌에는 두 가지 사고 체계가 있습니다: 자동적인 사고와 통제된 사고.</p></li>
 <li><p>우리의 추론은 종종 그 반대가 아니라 우리의 직관을 따릅니다.</p></li>
@@ -214,35 +229,117 @@ ul.task-list li input[type="checkbox"] {
 <li><p>이러한 실수는 우리가 사실을 해석하는 방식을 형성할 수 있고 겉보기에는 다루기 힘든 의견 차이를 초래할 수 있습니다.</p></li>
 </ol>
 </section>
-<section id="section" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> 11/8</h1>
-<p>1.care - fairness - liberty - authority - sanctity</p>
-<ol start="2" type="1">
-<li><p>사람에 따라 적용되는 도덕적 가치관이 다르다.</p></li>
-<li><p>서로 다른 관점의 목소리를 모두 듣고 판단해야한다.</p></li>
-<li><p>알지 못하는 것을 인정해야한다</p></li>
+<section id="lesson-2-us-and-them" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Lesson 2: Us and Them</h1>
+<section id="인식의-차이" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="인식의-차이"><span class="header-section-number">2.1</span> 인식의 차이</h2>
+<p>우리는 다른 사람들이 믿는 것에 대해 왜곡된 인식을 갖는 경향이 있다. 이러한 인식의 차이가 존재하는 이유는 크게 두가지가 있다.</p>
+<ol type="1">
+<li>Echo-chambers: 우리는 자신과 비슷한 생각을 가진 사람들끼리 그룹을 형성하여 자가격리되는 경향이 있다. 이는 일생생활에서 우리가 다양한 관점의 의견을 들을 가능성을 낮춘다</li>
+<li>Extreme views are loudest: 우리는 다른 관점들에 노출될 때 그들중 가장 극단적인 것을 듣는 경향이 있다. 다양한 미디어에서 극단적인 견해는 더 광범위하게 퍼져나가고 클릭수도 어마어마하다.</li>
 </ol>
 </section>
-<section id="lesson-5-navigating-conflict" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> 11/29 lesson 5: navigating conflict</h1>
+<section id="exhausted-majority." class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="exhausted-majority."><span class="header-section-number">2.2</span> Exhausted Majority.</h2>
+<p>조사에 따르면 미국인의 67%가 이러한 인식에 차이로 인한 사회 분열에 지쳤으며 공통점을 찾기 위해 노력하고 싶어한다는 것이 밝혀졌다. 이들을 ‘exhausred majority’ 라고 불린다.</p>
+<p><img src="images/s1.png" class="img-fluid" width="446"></p>
+</section>
+<section id="가지-도덕적-기준" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="가지-도덕적-기준"><span class="header-section-number">2.3</span> 6가지 도덕적 기준</h2>
+<p>맛에도 5종류로 나눠지듯이 도덕 기준도 6가지로 나누어진다. 이 기준들은 도덕적 기초라고 한다.</p>
+<p>사람마다 도덕적 기준의 우선순위가 다르다.</p>
+<p><img src="images/s2.png" class="img-fluid"></p>
+<p>care - 타인을 배려하고 친절과 연민의 가치를 높게둠</p>
+<p>fairness - 공정한 대우를 중요시하고 부정행위를 반대함</p>
+<p>liberty - 자유, 열망, 스스로 결정할 수 있는 결정권을 중요시함</p>
+<p>loyalty - 우리가 속한 가족 ,학교, 지역, 국적에 대한 깊은 관계를 중요시함</p>
+<p>authority - 전통, 법, 지도자등의 권위를 중요시함</p>
+<p>sanctity - 사람의 가치나 인권을 신성시하며 이것들을 모독하는 것을 잘못된 것이라고 생각함</p>
+<p>이러한 도덕적 기준은 직관을 뜻하는 코끼리의 렌즈로 비유된다. 즉 우리의 직관은 우리가 각각 가지고 있는 특정한 도덕적 기준을 토대로 형성되었다.</p>
+<p>사람마다 다른 도덕 기준을 가지고 있다는 것을 알고 다양한 관점의 의견을 들어보고 인식의 차이를 인정해야 한다.</p>
+</section>
+</section>
+<section id="lesson-3-get-curious" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Lesson 3: Get Curious</h1>
+<p>우리는 종종 자신이 믿고 있는 특정 가치의 관점이 유일하게 맞는 것이라고 느낀다.</p>
+<p>그 결과 우리는 마치 전투를 치루는 것 처럼 우리가 옳다는 것을 증명하려고 상대를 이기려고 하는 것에 집중한다.</p>
+<p><img src="images/s3.png" class="img-fluid"></p>
+<p>이렇게 우리가 전투적으로 대화를 치룰 다음과 같은 결과를 초래한다.</p>
 <ol type="1">
-<li><p>acknowled - mirror - restate values - empathize</p></li>
-<li><p>재진술시 주의한다.</p></li>
-<li><p>There are three steps for getting out of the panic zone:</p>
-<p>detect - pause - redirect</p></li>
-<li><p>panic zone’s responese fight - flight - freeze</p></li>
-<li><p>some clues to pay attention physical signs - thought - emotions - behaviors</p></li>
-<li><p>Techniques for Pausing:</p></li>
+<li>상대방의 입장을 더 방어적으로 대한다.</li>
+<li>상대방은 위협,모욕을 느끼거나 기분이 상할 수 있다.</li>
+<li>상대방과의 관계가 손상된다</li>
+<li>비록 전투에서 승리했다 하더라도 얻는 것이 거의 없다. 오히려 많은 것을 잃을 수 있다.</li>
 </ol>
-<p>Take deep breaths–Use grounding techniques–Practice mindfulness–Use positive self-talk</p>
-<ol start="7" type="1">
-<li><p>Address the Issue : Behaviors, Impact, Needs</p></li>
-<li><p>recap: Our brains automatically and instantaneously set off our fight, flight, or freeze response.</p></li>
+<section id="the-illusion-of-explanatory-depth" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-illusion-of-explanatory-depth"><span class="header-section-number">3.1</span> <strong>The Illusion of Explanatory Depth</strong></h2>
+<p>우리는 우리가 알고 있는 것보다 더 많은 것을 알고 있다고 착각하는 경향이 있다.</p>
+<p>이 현상은 ’The Illusion of Explanatory Depth’라고 불린다.</p>
+<p>우리는 문제에 대해 그렇게 많이 알지 못한 채로 강한 감정에 휘둘린다. 또한 이 사실을 문제에 대해 자세한 이야기하려고 시도할 때 우리가 ‘The Illusion of Explanatory Depth’ 에 빠졌다는 것을 알 수 있다.</p>
+<p>이는 매우 창피하고 불편하게 느껴질 수 있지만 이것을 받아들이는 것은 매우 효과적이다.</p>
+</section>
+<section id="intellectual-humility" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="intellectual-humility"><span class="header-section-number">3.2</span> Intellectual Humility</h2>
+<p>우리가 틀릴 가능성을 인정하는 것은 지적 겸손이라고 불린다. 이러한 지적 겸손을 갖추게 되면 많은 이점을 얻을 수 있다.</p>
+<p><img src="images/s4.png" class="img-fluid"></p>
+<p>의사 결정, 관계, 행복</p>
+<p>##Belief Updating</p>
+<p><img src="images/s5.png" class="img-fluid"></p>
+<p>우리는 우리의 신념을 100% 확신하는 이진법적인 사고를 가지고 있다.</p>
+<p>즉 각 주제에 대해 100% 옳은 것, 무조건 틀린 것이라고 극단적으로 판단하는 경향이 있다.</p>
+<p>우리는 이것을 고치고 60% 정도 맞다. 혹은 70%정도 맞다고 생각한다 등 유연하게 판단하는 사고가 필요하다</p>
+<p><img src="images/s6.png" class="img-fluid"></p>
+</section>
+<section id="탐험가정신" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="탐험가정신"><span class="header-section-number">3.3</span> 탐험가정신</h2>
+<p>지적 겸손을 수용하고 상대방을 물리치려하는 전사의 정신이 아니라 상대방을 이해하는 탐험가 정신이 필요하다.</p>
+<p>탐험가 정신으로 대화에 들어간다면 상대방도 당신에 대해 개방성과 호기심으로 보답할 가능성이 높아진다</p>
+</section>
+<section id="건설적인-질문" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="건설적인-질문"><span class="header-section-number">3.4</span> 건설적인 질문</h2>
+<p><img src="images/s7.JPG" class="img-fluid"></p>
+<p>호기심있는 질문, 열린 질문, 복잡성을 불러일으키는 질문, 이야기를 만드는 질문, 호기심 가득한 톤</p>
+</section>
+</section>
+<section id="lesson-4-storytelling" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Lesson 4: storytelling</h1>
+<p>우리의 직관은 우리의 믿음을 형성하는데 중요한 역할을 한다.</p>
+<p>따라서 우리는 누군가의 감정과 직관을 다뤄야 하는데 이에 스토리텔링은 가장 효과적인 방법이다.</p>
+<p>스토리텔링은 답답한 의견 대립를 건설적인 의견대립 의사소통으로 바꾸는 강력한 도구이다</p>
+<p>이야기에 있어서 솔직(honest), 중요(important), 요점(to the point) 이 세가지 기준에 유의하여 스토리텔링을 하면 더 효과적이다.</p>
+<section id="간접경험-스토리" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="간접경험-스토리"><span class="header-section-number">4.1</span> 간접경험 스토리</h2>
+<p>우리가 직접적으로 경험하지 않고 간접적은 얻은 스토리도 상대방의 감정을 자극하는데 효과적이다.</p>
+</section>
+<section id="스토리에-반응" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="스토리에-반응"><span class="header-section-number">4.2</span> 스토리에 반응</h2>
+<p>이야기에 귀를 기울리는 것은 매우 중요하다. 실제로 듣는 시간을 가질 떄 우리는 상대방에게 이해와 연결의 가능성을 열어 줄 수 있다. 상대방의 이야기를 효과적으로 듣는 방법이 4가지가 있다.</p>
+<p><img src="images/s8.JPG" class="img-fluid"></p>
+</section>
+</section>
+<section id="lesson-5-navigating-conflict" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Lesson 5: Navigating conflict</h1>
+<p>우리는 어려운 대화로 인해 혼란스러운 상황에 빠질 수 있다. 우리는 이러한 패닉존에 빠졌을 때 어떻게 stretch 존으로 되돌리는지 알아볼 필요가 있다.</p>
+<section id="elephant" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="elephant"><span class="header-section-number">5.1</span> 100%elephant</h2>
+<p>우리가 패닉존에 빠지면 더 깊은 생각이나 고려없이 코끼리만 날뛰는 직관에 의존하는 상태가 된다.</p>
+<p>이때 우리는 탐색 - 중지 - 경로 재설정의 과정을 밟아야 한다.</p>
+<p><img src="images/s9.png" class="img-fluid"></p>
+<ol type="1">
+<li>pause - 우리는 몸이 우리에게 보내는 다양한 신호를 감지해서 우리가 패닉룸에 빠졌다는 것을 인지해야한다.</li>
+<li>pause - 잠시 멈춰서 신체 - 정서 및 인지반응을 제어한다.</li>
+<li>redirection - 대화를 더 나은 방향으로 전환하고 충돌을 방지하기 위해 경로를 재설정한다.</li>
 </ol>
-<p>We can regain control of ourselves – and the conversation – if we slow down our FFF response.</p>
-<p>We can use different strategies to redirect ourselves and the conversation out of the panic zone.</p>
+<p>이 과정을 마치고</p>
+<ol type="1">
+<li>own your part - 변명하지 말고 자신의 행동은 인정해라</li>
+<li>express care - 상대방과 연결을 시도하고 상대방의 감정을 이해해라</li>
+<li>address the issue - 문제에서 발생한 행동을 진술하고 그 행동이 서로에게 어떠한 영향이 있었으며 그들이 앞으로 뭔 해야하는지 차근차근 이야기 하며 문제를 해결하려는 태도를 지녀라</li>
+<li>take a break - 잠시 시간을 가져라</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -273,9 +370,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -340,6 +451,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
